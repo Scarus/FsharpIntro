@@ -11,3 +11,10 @@ let printer (input: FizzBuzzResult) =
     | Buzz -> "Buzz"
     | FizzBuzz -> "FizzBuzz"
     | Number nbr -> string nbr
+
+let FizzBuzz input =
+    match input with
+    | number when number % 15 = 0 -> FizzBuzz
+    | number when number % 5 = 0 -> Buzz
+    | number when number % 3 = 0 -> Fizz
+    | _ -> Number input
