@@ -15,4 +15,4 @@ open FizzBuzz
 [<InlineData(15, "FizzBuzz")>]
 [<InlineData(45, "FizzBuzz")>]
 let ``FizzBuzz test`` input output =
-    Assert.Equal(output, FizzBuzzFunc input)
+    Assert.Equal(output, fizzBuzzFunc input)
