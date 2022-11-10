@@ -3,7 +3,6 @@ module Tests
 open System
 open Xunit
 
-open FizzBuzz
 
 [<Theory>]
 [<InlineData(1, "1")>]
@@ -15,4 +14,4 @@ open FizzBuzz
 [<InlineData(15, "FizzBuzz")>]
 [<InlineData(45, "FizzBuzz")>]
 let ``FizzBuzz test`` input output =
-    Assert.Equal(output, fizzBuzzFunc input)
+    Assert.Equal(output, FizzBuzzReloaded.fizzBuzz input)

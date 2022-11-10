@@ -1,6 +1,8 @@
 
 module FizzBuzz
 
+// simple ... basic ...
+
 type FizzBuzzResult = Fizz | Buzz | FizzBuzz | Number of int
 
 let printer (input: FizzBuzzResult) = 
@@ -10,11 +12,11 @@ let printer (input: FizzBuzzResult) =
     | FizzBuzz -> "FizzBuzz"
     | Number nbr -> string nbr
 
-let fizzBuzz input =
+let doFizzBuzz input =
     match input with
     | number when number % 15 = 0 -> FizzBuzz
     | number when number % 5 = 0 -> Buzz
     | number when number % 3 = 0 -> Fizz
     | _ -> Number input
 
-let fizzBuzzFunc (input: int) = printer (fizzBuzz input)
+let fizzBuzz (input: int) = printer (doFizzBuzz input)

@@ -5,6 +5,7 @@
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FizzBuzzReloaded.fs" />
     <Compile Include="FizzBuzz.fs" />
     <Compile Include="Tests.fs" />
     <Compile Include="Program.fs" />
