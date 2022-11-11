@@ -3,6 +3,7 @@ module FizzBuzz
 
 // simple ... basic ...
 
+// presenter d'abord l'union discriminée
 type FizzBuzzResult = Fizz | Buzz | FizzBuzz | Number of int
 
 let printer (input: FizzBuzzResult) = 
